@@ -1,0 +1,30 @@
+{
+  "name": "throttle-listeners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "src/",
+    "lib/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "build": "npx babel src --out-dir lib --extensions \".ts\""
+  },
+  "keywords": [
+    "debounce"
+  ],
+  "author": "pengZhou",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-typescript": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "eventemitter3": "^4.0.7",
+    "mocha": "^9.2.1",
+    "throttle-debounce": "^3.0.1"
+  }
+}
