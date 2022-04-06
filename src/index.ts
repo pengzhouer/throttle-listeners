@@ -13,7 +13,7 @@ function throttleListeners<T>(
     let values = listeners.map(l => l.getDefaultValue())
     let combinedValue = getState(...values)
     let realCombinedValue = combinedValue
-    stateUpdate(combinedValue)
+    // stateUpdate(combinedValue)
     let debounceCallback = throttle((v) => {
         if (realCombinedValue === undefined || v !== realCombinedValue) {
             realCombinedValue = v
